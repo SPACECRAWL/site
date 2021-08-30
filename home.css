@@ -75,6 +75,7 @@ html {
     font-family: "arial black";
     position: absolute;
     -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 
 .headersmall {
@@ -113,6 +114,7 @@ html {
     color: #ebdbff;
     margin-top:30px;
     -webkit-transform:translate3d(0,0,0);
+    transform: translate3d(0,0,0);
     line-height:18px;
     margin-left:-320px;
     padding-right:30px;
@@ -152,6 +154,7 @@ html {
     line-height:85px;
     font-weight: normal;
     -webkit-transform:translate3d(0,0,0);
+    transform: translate3d(0,0,0);
     position:sticky;
     margin-top:-33px;
     text-shadow: 1px 0px rgb(18 15 43 / 40%), 0px -1px rgb(18 15 43 / 40%), -1px 0px rgb(18 15 43 / 40%), 0px 1px rgb(18 15 43 / 40%);

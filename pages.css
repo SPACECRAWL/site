@@ -56,14 +56,16 @@ html {
     padding:15px;
     font-size: 20px;
     text-align:left;
+    padding-left:25px;
     border:1px solid rgb(228, 220, 228);
     border-bottom: 0px;
-    max-width:798px;
+    max-width:788px;
     color: #fff7fb;
     text-shadow: 1px 0px rgba(230, 186, 236, 0.5), 0px -1px rgba(100, 93, 194, 0.5),
                 -1px 0px rgba(186, 236, 213,.5), 0px 1px rgba(255, 184, 196, 0.5);
     font-family: "arial black";
     -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
     border-radius: 25px 25px 0px 0px;
 }
 
@@ -87,19 +89,21 @@ html {
 .highlight {
     font-weight:bold;
     color: #ab67b3;
-    font-family: arial black;;
+    font-family: arial black;
     text-shadow: 1px 0px rgb(255 255 255 / 50%), 0px 1px rgb(255 255 255 / 50%), -1px 0px rgb(255 255 255 / 50%), 0px -1px rgb(255 255 255 / 50%);
 }
 
 .numberspan {
     background: -webkit-linear-gradient(rgb(29, 23, 65), rgb(100, 72, 148), rgb(192, 99, 192));
     -webkit-background-clip: text;
+    background-clip: text;
     font-weight: bold;
     font-size: 15px;
     padding-right:8px;
     font-family: arial black;
     -webkit-text-fill-color: transparent;
     -webkit-transform:translate3d(0,0,0);
+    transform: translate3d(0,0,0);
     text-shadow: none;
 }
 
@@ -133,6 +137,7 @@ html {
                 -1px 0px rgba(186, 236, 213,.5), 0px 1px rgba(255, 184, 196, 0.5);
     font-family: "arial black";
     -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -178,6 +183,7 @@ html {
     line-height:85px;
     font-weight: normal;
     -webkit-transform:translate3d(0,0,0);
+    transform: translate3d(0,0,0);
     position:sticky;
     margin-top:-33px;
     text-shadow: 1px 0px rgb(18 15 43 / 40%), 0px -1px rgb(18 15 43 / 40%), -1px 0px rgb(18 15 43 / 40%), 0px 1px rgb(18 15 43 / 40%);
@@ -234,4 +240,77 @@ html {
 @font-face {
     font-family: 'rubik';
     src:  url('font/rubik.ttf')
+}
+
+.sepbar {
+    background: linear-gradient(155deg, rgba(95,97,175,1) 25%, rgba(138,112,180,1) 71%);
+    padding:5px;
+    padding-left:30px;
+    font-size:16px;
+    border: 1px solid #44326F;
+    color: #fff7fb;
+    text-shadow: 1px 0px rgba(230, 186, 236, 0.5), 0px -1px rgba(100, 93, 194, 0.5),
+                -1px 0px rgba(186, 236, 213,.5), 0px 1px rgba(255, 184, 196, 0.5);
+    font-family: "arial black";
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.seppad {
+    padding-left:4px;
+    padding-right:4px;
+}
+
+.tabletop {
+    text-transform: lowercase;
+    padding-right:30px;
+    border-radius: 0px 10px 0px 0px;
+    display:inline-block;
+    color: #504d7e;
+    font-size:18px;
+    border-left: 15px solid rgba(230, 128, 216);
+    padding-left:10px;
+    font-weight:bold;
+    padding-top:0px;
+    padding-bottom:0px;
+    font-family: "arial";
+}
+
+.tablebody {
+    background: rgba(182, 171, 201, 0.3);
+    padding:5px;
+    padding-right:10px;
+    padding-left:10px;
+    font-size:11px;
+}
+
+.tablebody2 {
+    background: rgb(191, 191, 219, 0.3);
+    padding:5px;
+    padding-right:10px;
+    padding-left:10px;
+    font-size:11px;
+}
+
+.tablebody3 {
+    background: rgba(182, 171, 201, 0.3);
+    padding:5px;
+    padding-right:10px;
+    padding-left:10px;
+    border-radius: 0px 0px 10px 10px;
+    font-size:11px;
+}
+
+.tableend {
+    padding:10px;
+    background: #80809c;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.lowlight {
+    font-weight:bold;
+    color: #8d5da3;
+    text-decoration: underline;
+    font-family: arial black;
+    text-shadow: 1px 0px rgba(255, 255, 255, 0.2), 0px 1px rgba(255, 255, 255, 0.2), -1px 0px rgba(255, 255, 255, 0.2), 0px -1px rgba(255, 255, 255, 0.2);
 }

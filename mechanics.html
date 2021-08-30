@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+                <title>SPACECRAWL</title>
+        <link rel="stylesheet" href="pages.css">
+        <script src="https://kit.fontawesome.com/38eed6a720.js" crossorigin="anonymous"></script>
+        <script language="javascript">
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 200px from the top of the document, show the button
+            window.onscroll = function () {
+                if (pageYOffset >= 200) {
+                    document.getElementById('myBtn').style.visibility = "visible";
+                } else {
+                    document.getElementById('myBtn').style.visibility = "hidden";
+                }
+            };            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>            
+    </head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="go to top"><i class="fas fa-chevron-up"></i></button>
+    <div align="center"><div id="bg" style="min-height:8470px;"></div><div class="pagepadd">
+
+        <div class="bartop"><a href="https://spacecrawl.github.io/site/home"><span><i class="fas fa-angle-double-left"></i></span></a> MECHANICS</div>
+        <div class="bar">
+            <a href="https://spacecrawl.github.io/site/rules"><div class="barbutton"><span><i class="fas fa-file-alt"></i></span><h1>rules</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/mechanics"><div class="barbutton"><span><i class="fas fa-dice-d20"></i></span><h1>mechanics</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/creation"><div class="barbutton"><span><i class="fas fa-pencil-alt"></i></span><h1>creation</h1></div></a>
+            <a href="https://discord.gg/KscZKZBT8u"><div class="barbutton"><span><i class="fas fa-comments"></i></span><h1>discord</h1></div></a>
+        
+            <div style="width:40px;display: inline-block;"></div>
+       
+            <a href="https://spacecrawl.github.io/site/crew"><div class="barbutton"><span><i class="fas fa-child"></i></span><h1>the crew</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/world"><div class="barbutton"><span><i class="fas fa-pastafarianism"></i></span><h1>the world</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/map"><div class="barbutton"><span><i class="fas fa-map-marked-alt"></i></span><h1>the map</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/oldevents"><div class="barbutton"><span><i class="fas fa-graduation-cap"></i></span><h1>past events</h1></div></a>
+            
+            <div style="width:40px;display: inline-block;"></div>
+    
+            <a href="https://spacecrawl.github.io/site/ship"><div class="barbutton"><span><i class="fas fa-rocket"></i></span><h1>ship specs</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/cargorep"><div class="barbutton"><span><i class="fas fa-box-open"></i></span><h1>cargo hold</h1></div></a>
+            </div>
+
+        <div class="boxdivider"></div>
+
+        <div class="titlebox">CHARACTER STATS</div>
+        <div class="boxbody">We have no plans to employ levels or advancement systems outside of occasional plot-related bonuses or earnable rewards. 
+            Your character will only have the following mechanical aspects to keep track of: 
+            stats, hit points, skills, and foci. This might seem like a lot, but it's actually all quite simple!
+
+            <div class="divider"></div>
+
+            <b>The rundown is this:</b>
+            
+            <ul><li><span class="highlight">Stats</span> represent how physically capable your character is.</li>
+            <li><span class="highlight">Hit points</span> represent how close your character is to defeat.</li>
+            <li><span class="highlight">Skills</span> represent your character's talents and prowess.</li>
+            <li><span class="highlight">Foci</span> represent additional abilities and skills your character has.</li></ul> 
+            
+            <div class="divider"></div>
+
+            <div class="sepbar">STATS</div><div class="seppad">
+
+            <p>Stats are divided into <span class="highlight">Strength, Fortitude, and Dexterity.</span> These are strictly the physical boundaries of your character; 
+            we've decided not to include things like charisma and intelligence as hard numbers, because these things fall under the jurisdiction 
+            of your skills.
+
+            <p>Stats can go <span class="highlight">up to 18.</span> Players have a total of <span class="highlight">30 points</span> they can allocate, 
+            with each stat having a <span class="highlight">minimum of 3.</span> 10 and 11 are considered what's average.
+
+            <p>When rolling dice that are affected by a stat, such as a roll made to push a boulder or win a footrace, you don't apply the whole stat; 
+            instead, you apply a modifier. This modifier is a small change applied to a relevant roll as a nod to your character's strength 
+            or weakness in that area.
+
+           <ul><li>score of 3 = <span class="highlight">-2</span></li>
+            <li>score of 4-7 = <span class="highlight">-1</span></li>
+            <li>score of 8-13 = <span class="highlight">0</span></li>
+            <li>score of 14-17 = <span class="highlight">+1</span></li>
+            <li>score of 18 = <span class="highlight">+2</span></li>
+            </ul></div>
+
+            <div class="divider"></div>
+
+            <div class="sepbar">HIT POINTS</div><div class="seppad">
+
+            <p>Hit points are the quantification of how close your character is to being defeated.
+
+            <p>A successful attack doesn’t always mean a direct physical hit. An attack that forces an enemy off-balance, grazes him, 
+            frightens him, or exhausts him might all drain his hit points, bringing him closer to defeat without actually inflicting 
+            real physical harm. <span class="highlight">Only the last handful of hit points necessarily reflect serious bodily damage,</span> 
+            so it’s up to the GM and player to decide how to describe the effects of a successful hit.
+                
+            <p>Hit points err on the lower side to avoid bloat and make combat short. Your total hit points will be <span class="highlight">10 + your 
+            Fortitude modifier,</span> plus anything granted by your focus.
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="sepbar">SKILLS</div><div class="seppad">
+
+            <p>Skills are all the things your character can do that rely on honed proficiency, be it your intelligence, your affability, 
+            or your general handiness and quick-thinking. Unlike popular game systems such as Dungeons & Dragons, skills here aren't 
+            connected to any one stat, and don't make use of modifiers the way our three physical stats do.
+
+            <div class="parasep"></div>
+
+            Instead, <span class="highlight">skills are done in a tier system,</span> with characters being able to have <span class="highlight">up to 
+            tier 5</span> in any given skill. These tiers represent your level of understanding and proficiency 
+            with a certain topic, be it engineering or medicine or even just how to impress and flatter people. 
+                
+            <div class="parasep"></div>
+
+            <p><b>These are what the different skill tiers mean:</b>
+            <ul><li><span class="highlight">untrained:</span> You have no experience with this skill, and have no idea what you're doing.</li>
+                <li><span class="highlight">tier 1:</span> You have very basic, ground-level knowledge about this skill.</li>
+                <li><span class="highlight">tier 2:</span> You have experience with this skill, and can do most basic tasks.</li>
+                <li><span class="highlight">tier 3:</span> Your mastery of this skill allows you to complete difficult challenges.</li>
+                <li><span class="highlight">tier 4:</span> You're an expert in this skill, and very few things escape your capabilities.</li>
+                <li><span class="highlight">tier 5:</span> You're a complete expert in this skill, probably even the best on the ship. 
+            Your small amount of failures are due to circumstance, not a lack of competency.</li>
+            </ul>    
+
+            <div class="parasep"></div>
+
+            <span class="highlight">Skills checks,</span> rolls done to overcome obstacles, represent challenges to a character's capabilities - 
+            for example, a Pilot check might be made to navigate an asteroid field safely, and a Heal check might be made to treat someone's wounds 
+            efficiently. <span class="highlight">These checks all have a difficulty level, also represented in tiers. You will always succeed at 
+            tasks with a difficulty level under your current tier in a skill.</span> This represents your training and expertise in that field. 
+            After all, a master engineer wouldn't fumble with screwing plates together, nor would someone with leadership experience fail to 
+            motivate already-eager troops!
+                
+            <div class="parasep"></div>
+
+            <P>When attempting a task with a difficulty <span class="highlight">at your current tier level,</span> 
+            you roll <span class="highlight">1d20.</span> So, for example, if a character with 2 tiers in the Heal skill were caring for 
+            a group of wounded soldiers, they'd be able to apply bandages and give others their prognosis without bothering to roll, but 
+            would still need to complete a skill check to do something such as amputating a limb or performing thoracic surgery. 
+            In this case, you need to roll a <span class="highlight">13 or higher</span> in order for your skill check to be successful.
+                
+            <div class="parasep"></div>
+
+            A task a tier above your own needs a <span class="highlight">15 or higher</span> to be successful. If attempting a task with a difficulty
+            <span class="highlight">two tiers above your own,</span> you roll with <span class="highlight">disadvantage</span> - 2d20, with the lower 
+            roll being the one that counts. Attempts at tiers beyond that are counted as automatic failures. 
+                
+            <div class="parasep"></div>
+
+            <p>Some items or situations, such as manuals or another character helping you, may grant you something called 
+            an <span class="highlight">asset</span> in a certain skill, which is a temporary bonus to your capabilities. 
+            Assets allow you to roll for a skill check <span class="highlight">one tier above your own</span> 
+            with <span class="highlight">advantage</span> - 2d20, with the higher roll being the one that counts! Some assets may only grant this 
+            bonus <span class="highlight">up to a certain point,</span> such as a pilot's manual that might only be useful to characters with tier 
+            2 or lower in Pilot, but contains no new information for anyone with tier 3 and above.
+                
+            <div class="parasep"></div>
+
+            When just starting out, <span class="highlight">you may only have up to tier 2 in any skill,</span> with exceptions for high ranking officers 
+            (jobs with a star next to their title on the manifest), who can have <span class="highlight">up to tier 3 in one skill only.</span> 
+            New characters get <span class="highlight">three free tiers</span> to allocate, in addition to those provided by their job and focus.
+            
+            <div class="parasep"></div>
+
+            <p>There are, of course, difficulty tiers for skill checks beyond tier 5, which represent attempts to understand things your 
+            civilization hasn't researched or encountered before, or other such situations a character couldn't realistically be prepared for.
+                
+            <div class="divider"></div>
+
+            <div class ="tabletop">INTERPERSONAL SKILLS</div><div class="parasep"></div>
+            <div class="tablebody"><span class="lowlight">ADMINISTER.</span> Manage an organization, handle paperwork, analyze records, 
+            and keep an institution functioning on a daily basis. Roll it for bureaucratic expertise, organizational management, legal knowledge, 
+            dealing with government agencies, and understanding how institutions really work.</div>
+            <div class="tablebody2"><span class="lowlight">CONNECT.</span> Find people who can be helpful to your purposes and get them to cooperate 
+            with you. Roll it to make useful connections with others, find people you know, know where to get illicit goods and services, and be familiar 
+            with foreign cultures and languages. You can use it in place of talk for persuading people you find via this skill.</div>
+            <div class="tablebody"><span class="lowlight">LEAD.</span> Convince others to also do whatever it is you're trying to do. Talk might persuade 
+            them that following you is smart, but lead can make them do it even when they think it's a bad idea. Roll it to lead troops in combat, convince 
+            others to follow you, or maintain morale and discipline.</div>
+            <div class="tablebody2"><span class="lowlight">TALK.</span> Convince other people of the facts you want them to believe. 
+            Roll it to persuade, charm, or deceive others in conversation.</div>
+            <div class="tablebody3"><span class="lowlight">TRADE.</span> Find what you need on the market and sell what you have. Roll it to sell things, 
+            figure out where to purchase hard-to-get goods, or haggle with merchants.</div>
+
+            <div class="dividerpostp"></div>
+
+            <div class ="tabletop">OCCUPATIONAL SKILLS</div><div class="parasep"></div>
+            <div class="tablebody"><span class="lowlight">FIX.</span> Create and repair devices both simple and complex. Roll it to fix things, 
+            build things, and identify what something is supposed to do.</div>
+            <div class="tablebody2"><span class="lowlight">HEAL.</span> Employ medical and psychological treatment for the injured. 
+            Roll it to cure diseases, stabilize the critically injured, treat psychological disorders, or diagnose illnesses.</div>
+            <div class="tablebody"><span class="lowlight">KNOW.</span> Know facts about academic or scientific fields. roll it to understand planetary 
+            ecologies, remember relevant history, solve science mysteries, and know the basic facts about rare or esoteric topics.</div>
+            <div class="tablebody2"><span class="lowlight">PERFORM.</span> Exhibit some performative skill. roll it to dance, sing, 
+            orate, act, or otherwise put on a convincing or emotionally moving performance.</div>
+            <div class="tablebody"><span class="lowlight">PILOT.</span> Use this skill to pilot vehicles or ride beasts. roll it to fly 
+            spaceships, drive vehicles, ride animals, or tend to basic vehicle repair.</div>
+            <div class="tablebody2"><span class="lowlight">PROGRAM.</span> Operating or hacking computing and communications hardware. 
+            Roll it to program or hack computers, control computer-operated hardware, operate communications tech, or decrypt things.</div>
+            <div class="tablebody3"><span class="lowlight">WORK.</span> This is a catch-all skill for professions not represented by other skills. 
+            Roll it to work at a particular profession, art, or trade.</div>    
+
+            <div class="dividerpostp"></div>
+
+            <div class ="tabletop">COMBAT SKILLS</div><div class="parasep"></div>
+            <div class="tablebody"><span class="lowlight">PUNCH.</span> Use it as a combat skill when fighting unarmed.</div>
+            <div class="tablebody2"><span class="lowlight">SHOOT.</span> Use it as a combat skill when using ranged weaponry, 
+            whether hurled rocks, bows, laser pistols, combat rifles, or ship's gunnery.</div>
+            <div class="tablebody3"><span class="lowlight">STAB.</span> Use it as a combat skill when wielding melee 
+            weapons, whether primitive or complex.</div>
+
+            <div class="dividerpostp"></div>
+
+            <div class ="tabletop">ENVIRONMENTAL SKILLS</div><div class="parasep"></div>
+            <div class="tablebody"><span class="lowlight">NOTICE.</span> Spot anomalies or interesting facts about your environment. 
+            Roll it for searching places, detecting ambushes, catching lies, spotting things, and reading the emotional state of other people.</div>
+            <div class="tablebody2"><span class="lowlight">SNEAK.</span> Move without drawing notice. Roll it for stealth, disguise, infiltration, 
+            pickpocketing, and the defeat of security measures.</div>
+            <div class="tablebody3"><span class="lowlight">SURVIVE.</span> Obtain the basics of food, water, and shelter in hostile environments, 
+            along with avoiding their natural perils. Roll it to handle animals, navigate difficult terrain, scrounge for resources, make basic tools, 
+            and avoid wild beasts or people hunting you.</div>
+            </div>
+
+            <div class="dividerpostp"></div>
+            <div class="parasep"></div>
+
+            <div class="sepbar">FOCI</div><div class="seppad"><div class="parasep"></div>
+
+            <p>Foci represent your character's unique specialization or talent, such as in hobbies, former lines of work, or 
+            a niche in a broader field of study. Anyone is welcome to <span class="highlight">write their own focus</span> for their character, 
+            so long as they're appropriately balanced in comparison to what's provided. A single focus will confer 
+            <span class="highlight">up to three benefits,</span> be it a situational advantage, a couple more hit points, one tier in any skill, 
+            or some other sort of nifty bonus.                
+
+            <p>WORK IN PROGRESS.
+
+            </div></div>
+
+            <div class="boxdivider"></div>
+
+            <div class="titlebox">TWO MEN ENTER, ONE MAN LEAVES</div>
+            <div class="boxbody">It's usually best to find a means of success that doesn't 
+            involve brute-forcing your way through an encounter - however, sometimes blasting a bunch of suckers in the face with your laser pistol 
+            is simply unavoidable. This is where combat comes in! Combat is just a way of seeing which side has prevailed over the other in battle, 
+            and through what means. There are two ways to do combat: <span class="highlight">long</span> and <span class="highlight">short.</span> 
+            
+            <div class="parasep"></div>
+
+            <p>Typical combat is done over a google sheets playing field called the <span class="highlight">THUNDERDOME,</span> with each square representing 
+            three feet. You will be able to move your character's tokens via edit permissions on any relevant sheet, as well as write in your actions 
+            on the turn order.
+
+            <div class="parasep"></div>
+            
+            In addition to any relevant dice rolls, combat sessions may be actively discussed in the <span class="highlight">#thunderdome channel</span> 
+            of the discord. This is also where the peanut gallery comments go - feel free to be as much of a loud, zany hypeman as your heart desires.
+
+            <div class="parasep"></div>
+
+            <p><span class="highlight">If you've played a tabletop game before, it's likely you already know how most of this stuff works. I know there's much texto here, 
+            so feel free to just skim!</span>
+            
+            <div class="divider"></div>
+
+            <div class="sepbar">ROUNDS</div><div class="seppad"><div class="parasep"></div>
+
+            <p>Combat is divided up into rounds, and rounds are divided up into turns. There is no hard limit as to how many rounds can be in one 
+            session of combat. Each round is approximately ten seconds, maybe even shorter, during which all participants act. When everyone has had 
+            their turn, the round ends, and another one begins from the top.
+
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="sepbar">INITIATIVE</div><div class="seppad"><div class="parasep"></div>
+
+            <p>In 1v1 combat, <span class="highlight">whoever has the highest Dexterity stat goes first.</span> If their Dexterity stats are the same, 
+            each character rolls a 1d20 and adds their Dexterity modifier. In combat with more than two opposed participants, however, things 
+            get slightly more complicated.
+
+            <div class="parasep"></div>
+
+            <span class="highlight">In any group combat scenario, there are going to be sides.</span> Sides are comprised of any participants 
+            who are allied to each other, and are fighting together for the same goal. The guy trying to shoot you is not on your side, but your 
+            coworker and your best friend are. During group combat, players will be asked to <span class="highlight">put their character on a side 
+            before the encounter starts.</span> Technically, the option to defect and assist the enemy is always there, but this opens you up to 
+            attack and consequence from your fellow crewmen.
+                
+            <div class="parasep"></div>
+
+            <p>Initiative in group combat works like this: <span class="highlight">the individuals on each side with the highest Dexterity stat</span> 
+            roll a 1d20, and add their Dexterity modifier. The character who rolled the highest has their side go first - initiative within any given 
+            side is determined the exact same way it is in 1v1 combat, by descending Dexterity.
+                
+            <div class="parasep"></div>
+
+            Occasionally, however, combat may be sprung unexpectedly upon an individual or upon a group. In that case, the character or side 
+            performing an ambush is automatically first in the turn order, despite their Dexterity stat, as their victim is surprised. 
+            <span class="highlight">Player characters aren't subject to surprise unless their guard is genuinely down at the moment of the ambush.</span> 
+            Someone walking in a dangerous part of a city is unlikely to be shocked by the sudden appearance of danger, unless the attack is so 
+            sudden and from such an unexpected quarter that even their obvious caution is insufficient.
+                
+            </div>
+
+            <div class="dividerpostp"></div>
+
+            <div class="sepbar">ACTION ECONOMY</div><div class="seppad"><div class="parasep"></div>
+
+            <p>There are three different types of actions a character can perform: the <span class="highlight">Main Action,</span> 
+            the <span class="highlight">Move Action,</span> and the <span class="highlight">Instant Action.</span>
+
+            <div class="parasep"></div>
+            <div class="parasep"></div>
+
+            <b style="font-family: arial black;font-size:14px;">MAIN ACTION | one on your turn</b>
+            <br>Every character can make one Main Action on their turn. Main Actions are deeds that absorb most of their turn, 
+            such as attacking an enemy, bracing a door, applying first aid to a downed ally, manipulating a complex device, 
+            or some other activity that takes up their focus. In place of their Main Action, a character can choose to take a 
+            second Move action.
+
+            <ul>
+                <li><span class="highlight">making a melee attack.</span> An opponent is within melee range of you if they're on a tile adjacent to yours, including diagonally. 
+            A weapon must be readied to be attacked with.</li></ul>
+            <ul>    <li><span class="highlight">making a ranged attack.</span> Ranged weapons often have a maximum range, so be sure to check what the range on your weapon is! 
+            Ranged attacks cannot be made if an opponent with a melee weapon is on a tile adjacent to yours.</li></ul>
+            <ul>    <li><span class="highlight">disengaging.</span> A character who wants to disengage from an opponent in melee must use their Main Action to do so, or else they 
+            suffer an attack of opportunity from any foe engaged with them when they perform their Move Action. There is no need to spend 
+            a Main Action disengaging from enemies who are wielding ranged weapons.</li></ul>
+            <ul>   <li><span class="highlight">using a skill.</span> Any skill that can plausibly be applied in ten seconds may be used as a main action. This could be brief 
+            medical care, an inspiring rallying cry, tinkering with a broken weapon to get it operational, or anything else you can come up with.</li>
+            </ul>
+
+            <div class="parasep"></div>
+            <div class="parasep"></div>
+
+            <b style="font-family: arial black;font-size:14px;">MOVE ACTION | one on your turn</b>
+            <br>Every character can make one Move Action on their turn, moving a number of tiles on the map equal to their Dexterity stat. 
+            Movement can be done diagonally. Characters can't split their Move Action, such as taking part of it before using their Main 
+            Action and the rest afterwards - all movement must be done in one swift stroke. Movement from the Move Action can be sacrificed 
+            to use this segment of your turn in some other ways, detailed below.
+
+            <ul>
+                <li><span class="highlight">picking up an item.</span> A character can scoop up an object off the ground if they have a free hand, 
+                leaving said object readied in their grip.</li></ul>
+                <ul>    <li><span class="highlight">reloading.</span> The character swaps magazines, or, god forbid, loads an arrow 
+                into some sort of space crossbow.</li></ul>
+                <ul>   <li><span class="highlight">grabbing or stowing something.</span> Only one of the two can be done per move action. 
+                The character shoves something in their backpack or pockets, or draws something instead. Drawn objects are automatically readied for use.</li>
+                </ul>
+                <ul>   <li><span class="highlight">going prone or standing up.</span> Only one of the two can be done per move action. Going prone makes a 
+                character harder to hit by ranged attackers, but makes them easier to hit for anyone adjacent to them. Characters must use 
+                their Move Action to stand up from the prone state.</li></ul>
+                <ul>    <li><span class="highlight">holding an action.</span> By choosing to Hold An Action, the combatant can delay taking the 
+                rest of their actions until later in the round, activating them as an Instant action. Thus, a character at the top of the 
+                turn order might use their Move action to Hold An Action. Later in the round, as an enemy rushes around a corner, they may 
+                instantly elect to use their Main Action to make a ranged attack with their readied laser rifle.</li></ul>
+                <ul>     <li><span class="highlight">shifting grip on a ranged weapon.</span> Certain ranged weapons can be shifted in one's hands to be used as a crude 
+                melee weapon, such as using the butt of a rifle or the back of a pistol. If applicable to your weapon, stats for use in melee will be 
+                available. This action can also be taken to wield a shifted ranged weapon for shooting once again.</li>
+            </ul>
+
+            <div class="parasep"></div>
+            <div class="parasep"></div>
+
+            <b style="font-family: arial black;font-size:14px;">INSTANT ACTION | any amount, any time</b>
+            <br>An Instant action is special in that it can be performed even when it's not the actor's turn. 
+            Certain combat actions are Instant, though more impactful ones often cost the actor's Main Action for the round as well. 
+            Dropping an object, saying something brief, or activating a simple device are all examples of Instant Actions. Any number of 
+            Instant Actions can be performed during a round, so long as any requirements are able to be met.
+
+            <ul>
+                <li><span class="highlight">snap attacks.</span> A combatant with a weapon readied can rush their attack, sacrificing 
+                accuracy for speed. The combatant must still have their Main Action impending or available. As an Instant Action, they can 
+                sacrifice it to make a melee or ranged attack against a foe in range. This attack takes a -4 penalty to its hit roll.</li></ul>
+
+            <ul><li><span class="highlight">total defense.</span> As an Instant action, the combatant focuses on nothing other 
+                than avoiding knives, gunfire, hurled crystalline spears, or other such perils. Using Total Defense costs the user 
+                their Main Action for the round, and can't be used if they've already employed their Main Action. They become 
+                immune to Shock damage for the round, regardless of their Armor Class, and gain a +2 bonus 
+                to their Armor Class until their next turn.</li>
+            </ul>
+
+            </div>        
+
+        <div class="dividerpostp"></div>
+
+        <div class="sepbar">HITTING AN ENEMY</div><div class="seppad"><div class="parasep"></div>
+
+        <p>When a character wants to hit a target, they need to use their Main Action to make an attack roll. An attack roll represents not just one lucky shot or swing, but them spending their round trying to get in a good hit or a clean shot at their target.
+            <div class="parasep"></div>
+
+        To make an attack roll, the assailant rolls <span class="highlight">1d20 and adds the number of tiers they have in their applicable skill</span> (Punch, Shoot, or Stab), and the stat modifier most relevant to the weapon (ranged weapons use Dexterity, small melee weapons can use Strength or Dexterity, and large melee weapons use Strength). If the total is <span class="highlight">equal to or higher than the target's Armor Class,</span> the attack hits.
+
+        <div class="parasep"></div>
+
+        <p>A successful attack inflicts damage to the target's hit points equal to the weapon's damage die. If it's an unarmed attack 
+        using the Punch skill, the attacker gets to add their tier number to the damage as well. If the target's Armor Class is low enough, 
+        some melee weapons will apply <span class="highlight">Shock,</span> which is a minimum amount of damage taken by the target <span class="highlight">even if their 
+        Armor Class isn't beaten on the attack roll.</span>
+
+            <div class="parasep"></div>
+
+        Certain circumstances in combat can make it easier or harder to land a blow on an opponent. For example, a marksman might have a hard time getting a bead on someone laying prone, but a melee attacker with a club will have a pretty easy time beating them senseless. <span class="highlight">Below are a table of modifiers to attack rolls based on positioning on the battlefield.</span>
+
+                <ul><li>Shooting at a distant prone foe: <span class="highlight">-2</span></li>
+                    <li>Attacking an adjacent prone foe: <span class="highlight">+2</span></li>
+                    <li>Melee attacking while prone: <span class="highlight">-4</span></li>
+                    <li>The target is at least half behind cover: <span class="highlight">-2</span></li>
+                    <li>The target is almost completely in cover: <span class="highlight">-4</span></li>
+                    <li>Shooting from a prepared firing position: <span class="highlight">+2</span></li></ul>
+
+        </div>
+
+        <div class="dividerpostp"></div>
+
+        <div class="sepbar">EDGE CASES</div><div class="seppad"><div class="parasep"></div>
+
+        <p><span class="highlight">dual wielding.</span>
+                Dual-wielding requires at least tier 1 in Shoot or Stab depending on the weapons used. 
+                Anyone dual-wielding suffers a -1 penalty on hit rolls due to the extra complication, but gains a +2 bonus on damage 
+                rolls on a successful hit. Dual-wielding does not apply to fists.
+
+                <div class="parasep"></div>
+                
+            <span class="highlight">shoving or disarming an enemy.</span>
+                To shove, herd, or otherwise manipulate a foe, the attacker has to hit them with a Punch attack, doing no damage, 
+                and then win an opposed Punch skill check. If they win, the opponent either gets moved up to three meters in the 
+                direction the player wishes, is disarmed, or is knocked prone. Disarmed weapons are dropped on the ground, and a Move 
+                Action must be used to pick them up.            
+
+                <div class="parasep"></div>
+
+</body>
+</html>
