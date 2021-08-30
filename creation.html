@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+                <title>SPACECRAWL</title>
+        <link rel="stylesheet" href="pages.css">
+        <script src="https://kit.fontawesome.com/38eed6a720.js" crossorigin="anonymous"></script>
+        <script language="javascript">
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 200px from the top of the document, show the button
+            window.onscroll = function () {
+                if (pageYOffset >= 200) {
+                    document.getElementById('myBtn').style.visibility = "visible";
+                } else {
+                    document.getElementById('myBtn').style.visibility = "hidden";
+                }
+            };            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>            
+    </head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="go to top"><i class="fas fa-chevron-up"></i></button>
+    <div align="center"><div id="bg" style="min-height:1170px;"></div><div class="pagepadd">
+
+        <div class="bartop"><a href="https://spacecrawl.github.io/site/home"><span><i class="fas fa-angle-double-left"></i></span></a> CHARACTER CREATION</div>
+        <div class="bar">
+            <a href="https://spacecrawl.github.io/site/rules"><div class="barbutton"><span><i class="fas fa-file-alt"></i></span><h1>rules</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/mechanics"><div class="barbutton"><span><i class="fas fa-dice-d20"></i></span><h1>mechanics</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/creation"><div class="barbutton"><span><i class="fas fa-pencil-alt"></i></span><h1>creation</h1></div></a>
+            <a href="https://discord.gg/KscZKZBT8u"><div class="barbutton"><span><i class="fas fa-comments"></i></span><h1>discord</h1></div></a>
+        
+            <div style="width:40px;display: inline-block;"></div>
+       
+            <a href="https://spacecrawl.github.io/site/crew"><div class="barbutton"><span><i class="fas fa-child"></i></span><h1>the crew</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/world"><div class="barbutton"><span><i class="fas fa-pastafarianism"></i></span><h1>the world</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/map"><div class="barbutton"><span><i class="fas fa-map-marked-alt"></i></span><h1>the map</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/oldevents"><div class="barbutton"><span><i class="fas fa-graduation-cap"></i></span><h1>past events</h1></div></a>
+            
+            <div style="width:40px;display: inline-block;"></div>
+    
+            <a href="https://spacecrawl.github.io/site/ship"><div class="barbutton"><span><i class="fas fa-rocket"></i></span><h1>ship specs</h1></div></a>
+            <a href="https://spacecrawl.github.io/site/cargorep"><div class="barbutton"><span><i class="fas fa-box-open"></i></span><h1>cargo hold</h1></div></a>
+            </div>
+
+        <div class="boxdivider"></div>
+
