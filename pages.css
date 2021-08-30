@@ -284,6 +284,15 @@ html {
     font-size:11px;
 }
 
+.tablebody12 {
+    background: rgba(157, 147, 173, 0.3);
+    padding:5px;
+    padding-right:10px;
+    border-radius: 10px 10px 0px 0px;
+    padding-left:10px;
+    font-size:11px;
+}
+
 .tablebody2 {
     background: rgb(191, 191, 219, 0.3);
     padding:5px;
@@ -309,7 +318,7 @@ html {
 
 .lowlight {
     font-weight:bold;
-    color: #8d5da3;
+    color: #8177a7;
     text-decoration: underline;
     font-family: arial black;
     text-shadow: 1px 0px rgba(255, 255, 255, 0.2), 0px 1px rgba(255, 255, 255, 0.2), -1px 0px rgba(255, 255, 255, 0.2), 0px -1px rgba(255, 255, 255, 0.2);
