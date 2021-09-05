@@ -336,7 +336,7 @@ html {
     height: 100%;
     z-index: 999999;
     pointer-events: none;
-    background: #756b9b;
+    background: #201944;
     animation-duration: 700ms;
     animation-timing-function: ease-in-out;
 }
