@@ -257,9 +257,13 @@ html {
     transform: translate3d(0,0,0);
 }
 
+a {
+    color:#392A62;
+}
+
 .seppad {
     padding-left:4px;
-    padding-right:4px;
+    padding-right:7px;
 }
 
 .tabletop {
